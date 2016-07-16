@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.android.ipshita.harrypotterquiz.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="480dp"
+                android:background="#212121"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="28dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="But First,"
+                        android:textColor="#FFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/det"
+                        android:textColor="#FFF"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/nametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:hint="Name"
+                        android:textColor="#FFF"
+                        android:textColorHint="#c6c6c6"
+                        android:theme="@style/nametext" />
+
+                    <EditText
+                        android:id="@+id/emailtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:hint="Email"
+                        android:textColor="#FFF"
+                        android:textColorHint="#c6c6c6"
+                        android:theme="@style/nametext" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/intro"
+                        android:textColor="#000"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/q1"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/ans1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:hint="Answer"
+                        android:textColor="#000"
+                        android:theme="@style/qtext" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/q2"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/lockhart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="10dp"
+                        android:text="Gilderoy Lockhart"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:theme="@style/other" />
+
+                    <CheckBox
+                        android:id="@+id/luna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingLeft="10dp"
+                        android:text="Luna Lovegood"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:theme="@style/other" />
+
+                    <CheckBox
+                        android:id="@+id/lupin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingLeft="10dp"
+                        android:text="Lupin"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:theme="@style/other" />
+
+                    <CheckBox
+                        android:id="@+id/tonks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingLeft="10dp"
+                        android:text="Tonks"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:theme="@style/other" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/q3"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/ans3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:theme="@style/other">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hermoine Granger"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Neville Longbottom"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ron Weasley"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/harry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harry Potter"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/q4"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/ans4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:theme="@style/other">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Official wizarding License"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/owl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ordinary wizarding Level"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Organized wizard learning"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Outstanding wizard lesson"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/q5"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/ans5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:theme="@style/other">
+
+                        <RadioButton
+                            android:id="@+id/fang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a basilisk fang"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="the sword of gryffindor"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="fiendfyre"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="the killing curse"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/q6"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/ans6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:theme="@style/other">
+
+                        <RadioButton
+                            android:id="@+id/locked"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Corridoors with dead ends and locked doors"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Being locked in his room"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flying Motorcycles"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Voldemort's snake Nagini"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="16dp"
+                        android:onClick="submitanswers"
+                        android:text="SUBMIT" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/owl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="The"
+                android:textColor="#FFC107"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/maintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:text="HarryPotter"
+                android:textColor="#FFC107"
+                android:textSize="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Quiz"
+                android:textColor="#FFC107"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="330dp"
+                android:text="@string/pretext"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="385dp"
+                android:text="@string/predesc"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

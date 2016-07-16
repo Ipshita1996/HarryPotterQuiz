@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HarryPotterQuiz</string>
+    <string name="pretext">Are you a real Potterhead?\n Let\'s find out!</string>
+    <string name="predesc">This quiz is based upon all events from the Harry Potter books by their author, J.K. Rowling. Do not expect to know all the answers if you\'ve only watched the movies!</string>
+    <string name="det">Enter your details</string>
+    <string name="intro">Start Answering!</string>
+    <string name="q1">When is Harry Potter\'s birthday?</string>
+    <string name="q2">Select the teachers who taught Harry: </string>
+    <string name="q3">Who is unanimously elected leader of Dumbledore\'s Army?</string>
+    <string name="q4">What does O.W.L. stand for?</string>
+    <string name="q5">What do Ron and Hermione use to destroy Helga Hufflepuff\'s cup?</string>
+    <string name="q6">What does Harry dream about during the summer holiday before his fifth year?</string>
+</resources>
